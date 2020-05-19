@@ -1,0 +1,109 @@
+body{
+	font-family: arial;
+	font-size: 20px;
+	line-height: 30px;
+}
+header{
+
+	background-color: blue;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+h1, h2{
+	font-family: 'Oxanium', cursive;
+}
+header h1{
+	color: white;
+	font-size: 50px;
+
+}
+
+header img{ 
+	margin-top: 50px;
+	margin: 0 200px;
+
+	border-radius: 330px;
+	width: 330px;
+	height: 330px;
+	border: 20px solid white;
+	background-color: #339CFF;
+ }
+ main{
+ 	max-width: 800px;
+ 	margin: 0 auto;
+ 	padding: 20px;
+
+ }
+ main img {
+ 	max-width: 100%;
+ }
+ h2{
+ 	font-size: 40px;
+	margin: 40px 0 10px;
+	color: blue;
+ }
+ a{
+ 	color: blue;
+ 	text-decoration: none;
+ }
+ a:hover{
+ 	color: magenta;
+ }
+ footer{
+ 	background-color: blue;
+ 	text-align: center;
+ 	color: white;
+ 	padding: 50px;
+ }
+ footer p{
+ 	
+ 	margin: 0;
+ }
+
+p.kursiv{
+	color: #999999;
+	font-style: italic;
+	margin: 0;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+nav{
+	float: left;
+}
+nav li{
+	display: inline-block;
+	margin-right: 70px, auto;
+	padding: 20px;
+	padding-top: 0px;
+	position: relative;
+	}
+	nav a {
+		color: lightblue;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	nav a:hover{
+		color: #000;
+	}
+	nav a::before{
+		top: 0;
+		content:'';
+		display: block;
+		height: 2px;
+		
+		background-color: #000;
+		position: absolute;
+		width: 0%;
+		transition: all ease-in-out 100ms;
+
+	}
+	nav a:hover::before{
+		width: 100px;
+	}
